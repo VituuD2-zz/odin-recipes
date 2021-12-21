@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-header</title>
+    <style>
+        @charset "UFT-8";
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        header{
+            display: flex;
+            background-color: peachpuff;
+            margin: 5px;
+            width: 100vw;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+        label{
+            font: normal 2.5rem 'Bree Serif';
+            color: orangered;
+            padding: 0 5px;
+            background-color: #fff;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        ul li{
+            font: normal 1rem serif;
+            color: blue;
+            padding: 5px;
+            background-color: #fff;
+            text-transform: uppercase;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="l">
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
+        <label class="logo">LOGO</label>
+        <div class="r">
+            <ul>
+                <li>four</li>
+                <li>five</li>
+                <li>six</li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

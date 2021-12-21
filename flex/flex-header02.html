@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Header 2</title>
+    <style>
+        @charset "UFT-8";
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        header{
+            padding: 8px;
+            width: 100vw;
+            box-shadow: 0 5px 8px rgba(0, 0, 0, 0.17);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        label{
+            font: italic 3rem 'Bree Serif';
+            font-weight: bold;
+            color: rebeccapurple;
+            margin-left: 8px;
+            line-height: 15px;
+        }
+
+        ul{
+            margin-left: 8px;
+            display: flex;
+            gap: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li a{
+            font: normal 1.13rem Verdana;
+            color: rebeccapurple;
+        }
+
+        .notify{
+            background-color: rebeccapurple;
+            font: normal 0.95rem Arial;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 8px;
+            border: none;
+            
+        }
+
+        .circle{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: rebeccapurple;
+            box-shadow: inset 2px 3px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .block-1, .block-2{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="block-1">
+            <label class="logo">LOGO</label>
+            <ul>
+                <li><a href="#">link-one</a></li>
+                <li><a href="#">link-two</a></li>
+                <li><a href="#">link-three</a></li>
+            
+            </ul>
+        </div>
+        <div class="block-2">
+            <button class="notify">1 new notification</button>
+            <div class="circle"></div>
+        </div>
+    </header>
+</body>
+</html>

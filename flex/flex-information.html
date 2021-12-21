@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Information</title>
+    <style>
+        @charset "UTF-8";
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            width: 100%;
+        }
+        body{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1{
+            margin: 32px 0;
+        }
+        .container-images{
+            display: flex;
+            gap: 52px;
+            margin-inline-start: 52px;
+            margin-inline-end: 52px;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Information !</h1>
+    <div class="container-images">
+        <div class="img1"><img src="images/chilli.png" alt="image 1">
+            <p>This is another type of plant. Isn't it nice</p>
+        </div>
+        <div class="img2"><img src="images/pepper.png" alt="image 2">
+            <p>We have so many plants. Yay plants.</p>
+        </div>
+        <div class="img3"><img src="images/barberry.png" alt="image 3">
+            <p>This is a type of plant. We love this one.</p>
+        </div>
+        <div class="img4"><img src="images/saffron.png" alt="image 4">
+            <p>I'm runnig out of thing to say about plants.</p>
+        </div>
+    </div>
+</body>
+</html>
